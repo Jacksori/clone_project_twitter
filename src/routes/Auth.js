@@ -21,8 +21,8 @@ const Auth = () => {
             provider = new firebaseInstance.auth.GithubAuthProvider();
         }
 
-        // const data = await authService.signInWithPopup(provider);
-        // console.log(data);
+        const data = await authService.signInWithPopup(provider);
+        console.log(data);
     };
 
     const onChange = (event) => {
@@ -68,8 +68,8 @@ const Auth = () => {
             </span>
             <div>
                 <button onClick={onSocialClick} name="google">
-                    Continue with Goolge
-                    </button>
+                    Continue with Google
+                </button>
                 <button onClick={onSocialClick} name="github">
                     Continue with Github
                 </button>
